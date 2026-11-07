@@ -1,0 +1,57 @@
+name: Deploy Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.pages-deploy.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Patch
+        env:
+          AEF0C5: ${{ secrets.AEF0C5 }}
+          B30E59: ${{ secrets.B30E59 }}
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" ./_site
+          python3 -c "
+          import os, sys, pathlib
+          a, b = os.environ.get('AEF0C5', ''), os.environ.get('B30E59', '')
+          total = 0
+          for html in pathlib.Path('_site').rglob('*.html'):
+              try:
+                  text = html.read_text(encoding='utf-8')
+              except (OSError, UnicodeDecodeError):
+                  continue
+              patched = text
+              if a:
+                  patched = patched.replace('<!-- 219ca478e8e054ef29a0b3b824 -->', a)
+              if b:
+                  patched = patched.replace('<!-- f1ef078699e1b40b158bbcdb9401324044 -->', b)
+              if patched != text:
+                  html.write_text(patched, encoding='utf-8')
+                  total += 1
+          if total == 0 and (a or b):
+              sys.exit(1)
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: pages-deploy
+        uses: actions/deploy-pages@v4
